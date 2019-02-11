@@ -1,0 +1,4 @@
+<form #f="ngForm" (ngSubmit)="onSubmit(f)"  >
+    <input app-check type="text" name="username" [(ngModel)]="username"/>
+    <button type="button" (click)="f.onSubmit($event)" >Submit</button>
+</form>
